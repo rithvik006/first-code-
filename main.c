@@ -1,26 +1,33 @@
 /**
- * @file main.c
- * @brief This file contains if-else statements to find the maximum in the given two numbers
- * @author rithvik
- * @date 2024-10-06
+ * @file project1
+ * @brief this file contains variables and decision making statements to find whether the given number is odd or even
+ * @author Rithvik
+ * @date 2024-10-07
  */
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main()
-{   //find the maximum in the given 2 numbers
-    int num1,num2;//declared the numbers for inputs
-    printf("enter any two numbers : ");//asking user for input
-    scanf("%d%d",&num1,&num2);
-    if (num1>num2){
-        printf("in the given two numbers,%d is maximum\n",num1);
-    }//output is "in the given two numbers,num1 is maximum
-    else if (num2>num1){
-        printf("in the given two numbers,%d is maximum\n",num2);
-    }//output is "in the given two numbers,num2 is maximum
-    else {
-        printf("both numbers are equal");
-    } //output is "both numbers are equal
+{ //find the odd or even
+    int x; //declared the number as x
+    printf(" enter any number :\n");//asking user for input
+
+    if (scanf("%d", &x) != 1) {
+        printf("Error! Please enter a valid number.\n");
+        return 1; // Exit the program with an error code
+    }
+
+    int n=x%2;//mathematical function to find the even odd number
+
+    if (n==0)
+    {
+        printf("the given number is even");
+    }//the output will be "the given number is even"
+    else
+    {
+        printf("the given number is odd");
+    } //the output will be "the given number is odd"
 
     return 0;
 }
