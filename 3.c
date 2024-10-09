@@ -3,7 +3,7 @@
  * @brief This file contains if-else statements to generate grades based on the given score.
  * @details The program prompts the user to enter a score and then determines the corresponding grade based on predefined ranges.
  * @author Rithvik
- * @date 2024-10-10
+ * @date 2024-10-09
  */
 
 #include <stdio.h>
